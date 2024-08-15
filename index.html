@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archit Bidkar - AWS Cloud Engineer & Solution Architect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(32, 38, 57, 100), rgba(244, 244, 244, 100));
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 1325px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header-overlay {
+            background-image: url('https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/06/clouds-featured.png?fit=4000%2C2000&ssl=1/1200x300/000000/000000?text=+');
+            background-size: cover;
+            background-position: center;
+            color: #808000;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .name-title h1 {
+            margin: 0;
+            color: #ff9900;
+        }
+        .certifications img {
+            width: 95px;
+            height: 95px;
+            margin-left: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #ff9900;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #232f3e;
+            border-bottom: 2px solid #ff9900;
+            padding-bottom: 10px;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #ff9900;
+            color: #16191f;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+        .aws-services, .projects-container, .diagrams-container, .blogs-container { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .aws-service, .project, .diagram, .blog {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .aws-service:hover, .project:hover, .diagram:hover, .blog:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .diagram-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .read-more-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #ff9900;
+            text-decoration: none;
+        }
+		.contact{
+			text-align: center;
+			margin-bottom: 40px;
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+        footer {
+            text-align: center;
+            margin-top: 2px;
+            color: #232f3e;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-overlay">
+            <div class="header-content">
+                <div class="profile-info">
+                    <img src="https://uc68a87da97729377d75b6eb8ae5.previews.dropboxusercontent.com/p/thumb/ACXWUzyMtBz75qgNrlKg7ouUfBximbyWIBHnYFrUiNF3t-acfAXt5mDmfM0_gso58AEyr4Xx7yJJ6UpQXT2q5TRY_fN6kOEoAtPr-_gnPfqwB-lsbgFCalMn_qG0GBpy4DAA5DXat8eHA-C2tzieHvv2ooZMqPhPWwP3Dof5cA-A3JqGPDTf-9_WqDrrode7rTKH5XKbP_iJshsBBaKCf3TGUykYg1XE2PO5Sp4D-AL0qFsZ1KeK6PaSdrIOC7N4wyRlrGVEGZuQF5ebAI5mL7MoXfTFlCI9omHYhARzp07WaSokmRA06OadxRmJZmCbE4ynAQA7i-uitntV1XIvXNQ7PzMD4wL063so4HKiMQjhRcFgnBcGGGwDsKJitGTqTDiSiTy-cZva0X0fF2d5KsFA/p.jpeg?is_prewarmed=true/150" alt="Archit Bidkar" class="profile-pic">
+                    <div class="name-title">
+                        <h1>Archit Bidkar</h1>
+                        <p>AWS Cloud Engineer | Solution Architect</p>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <img src="https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Certified Solutions Architect">
+                    <img src="https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Certified DevOps Engineer">
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">AWS Services</a></li>
+                <li><a href="#aws-services">Projects</a></li>
+                <!-- <li><a href="#aws-diagrams">AWS Diagrams</a></li> -->
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about" class="section">
+                <h2>About Me</h2>
+				<p>I am an IT professional with years of experience, specializing in Amazon Web Services (AWS). With a strong focus on designing and implementing solutions that align with business objectives, I possess dedicated expertise in AWS services.
+				My skill set encompasses designing and executing robust, scalable, and cost-effective cloud solutions, while adeptly translating complex technical concepts into actionable strategies that enhance business value.
+				My passion for continuous learning keeps me abreast of the latest AWS technologies, and I am eager to leverage my expertise to create meaningful impacts within the AWS ecosystem. <p>
+<!--
+                <p>I am a dynamic IT professional with a strong focus on AWS, skilled in crafting and implementing solutions that align with business goals. With 4.7 years of experience in the IT sector, including 3.5 years dedicated to AWS services, I have developed a proven ability to architect effective solutions, optimize infrastructures, and manage security protocols.</p>
+                <p>My expertise spans across a wide range of AWS services, enabling me to design and implement robust, scalable, and cost-effective cloud solutions. I excel in translating complex technical concepts into actionable strategies that drive business value.</p>
+                <p>My collaborative mindset and commitment to client satisfaction have consistently driven successful project outcomes. I thrive in fast-paced environments and enjoy tackling complex challenges with innovative solutions. With a passion for continuous learning and staying abreast of the latest AWS technologies, I am eager to apply my expertise to create meaningful impacts and further my career in the AWS ecosystem.</p>
+            
+-->			</section>
+
+            <section id="skills" class="section">
+                <h2>AWS Skills</h2>
+                <div class="skills-container">
+                    <span class="skill">Elastic Compute Cloud</span>
+                    <span class="skill">Lambda</span>
+                    <span class="skill">Fargate</span>
+                    <span class="skill">IAM</span>
+                    <span class="skill">S3</span>
+                    <span class="skill">Glacier</span>
+                    <span class="skill">FSx</span>
+                    <span class="skill">Relational Database Service</span>
+                    <span class="skill">Aurora</span>
+                    <span class="skill">Virtual Private Cloud</span>
+                    <span class="skill">Route 53</span>
+                    <span class="skill">CloudFront</span>
+                    <span class="skill">CloudWatch</span>
+                    <span class="skill">CloudTrail</span>
+                    <span class="skill">Polly</span>
+                    <span class="skill">Lex</span>
+                    <span class="skill">Bedrock</span>
+                    <span class="skill">EventBridge</span>
+                    <span class="skill">Simple Queue Service</span>
+                    <span class="skill">Kinesis Data Stream</span>
+                    <span class="skill">Data Firehose</span>
+                </div>
+            </section>
+			
+			<section id="aws-services" class="section">
+                <h2>AWS Services Expertise</h2>
+                <div class="aws-services">
+                    <div class="aws-service">
+                        <h3>Compute</h3>
+                        <p>Expert in EC2, Fargate, Lambda and WorkSpaces. Proficient in designing scalable and cost-effective compute solutions for various workloads.</p>
+                    </div>
+                    <div class="aws-service">
+                        <h3>Storage & Database</h3>
+                        <p>Extensive experience with S3, Glacier, RDS, Aurora and DynamoDB. Skilled in implementing tiered storage solutions and data lifecycle management.</p>
+                    </div>
+                    <div class="aws-service">
+                        <h3>Networking & Content Delivery</h3>
+                        <p>Proficient in VPC configurations, Route 53, Load Balancing and CloudFront. Capable of designing secure and efficient network architectures.</p>
+                    </div>
+                    <div class="aws-service">
+                        <h3>Security & Identity</h3>
+                        <p>Expert in IAM, KMS, and ACM. Experienced in implementing robust security measures and compliance frameworks.</p>
+                    </div>
+                    <div class="aws-service">
+                        <h3>Management & Governance</h3>
+                        <p>Skilled in CloudWatch, CloudTrail, Systems Manager, and AWS Budgets. Experienced in setting up comprehensive monitoring, logging, and governance systems.</p>
+                    </div>
+                    <div class="aws-service">
+                        <h3>Machine Learning</h3>
+                        <p>Experience with Amazon Q, Lex, and Polly. Capable of deploying them for end users.</p>
+                    </div>
+					<div class="aws-service">
+                        <h3>Decoupled Services</h3>
+                        <p>Well-versed in configuring EventBridge, Simple Queue Service, Kinesis Data Stream and Data Firehose. Provides better performance compared to monolithic apps</p>
+                    </div>
+                </div>
+            </section>
+			
+
+			<section id="projects" class="section">
+				<h2>Completed Projects</h2>
+				<div class="projects-container">
+					<div class="project">
+						<h3>Deployed Web Application</h3>
+						<p>Led the designing of a in-house referral portal on AWS, implementing a robust architecture using Amazon EC2, S3 and Route 53. Resulted in 20% improved response times and 15% reduction in operational costs.</p>
+					</div>
+					<div class="project">
+					<!-- Link for full details - https://www.phdata.io/blog/how-to-load-your-google-analytics-dataset-into-snowflake/ -->
+						<h3>Real-time Analytics Pipeline</h3>
+						<p>Built a data pipeline using AWS App Flow native connectors for Google Analytics and Snowflake Connect as source and destination respectively. This solution provided a quick, easy-to-maintain, and low-cost method for moving data from GA into the Snowflake Data Cloud.</p>
+					</div>
+					<div class="project">
+						<h3>Secure Risk Management Cloud Infrastructure</h3>
+						<p>Architected a highly secure and compliant cloud infrastructure for a Risk Management company using AWS VPC, WAF, EC2, WorkSpaces, Active Directory, FSx, Aurora and KMS. Implemented a multi-AZ strategy to ensure separation of concerns and enhance security posture.</p>
+					</div>
+					<div class="project">
+						<h3>Legacy Data Migration to S3 & Glacier</h3>
+						<p>Helped to migrate data over 20TB to AWS S3 & Glacier from third party apps for better security, fast access & cost efficiency. Reduced over 35% storage cost.</p>
+					</div>
+				</div>
+			</section>
+						
+			<!--
+            <section id="aws-diagrams" class="section">
+                <h2>Few AWS Architectural Diagrams</h2>
+                <div class="diagrams-container">
+                    <div class="diagram">
+                        <img src="https://via.placeholder.com/300x200" alt="Serverless Web Application" class="diagram-image">
+                        <h3>Serverless Web Application</h3>
+                        <p>This architecture demonstrates a scalable, serverless web application using AWS Lambda, API Gateway, and DynamoDB.</p>
+                    </div>
+                    <div class="diagram">
+                        <img src="https://via.placeholder.com/300x200" alt="Data Lake Solution" class="diagram-image">
+                        <h3>Data Lake Solution</h3>
+                        <p>An end-to-end data lake solution leveraging S3, Glue, Athena, and QuickSight for data analytics and visualization.</p>
+                    </div>
+                    <div class="diagram">
+                        <img src="https://via.placeholder.com/300x200" alt="Multi-Region Disaster Recovery" class="diagram-image">
+                        <h3>Multi-Region Disaster Recovery</h3>
+                        <p>A robust disaster recovery setup using Route 53, CloudFront, and cross-region replication for high availability.</p>
+                    </div>
+                </div>
+            </section>
+			-->
+            <section id="blogs" class="section">
+                <h2>Blogs</h2>
+                <div class="blogs-container">
+                    <div class="blog">
+                        <h3><a href="https://medium.com/@architbidkar_66467/better-security-how-to-get-notified-immediately-when-an-aws-user-signs-into-the-console-0908a5343b35?source=user_profile---------0----------------------------">Better Security: How to Get Notified Immediately When an AWS User Signs Into the Console</a></h3>
+                        <p>Alerting mechanism for AWS user sign-ins.</p>
+                    </div>
+                    <div class="blog">
+                        <h3><a href="https://medium.com/@architbidkar_66467/establishing-a-connection-between-public-private-aws-ec2-servers-using-squid-proxy-d288be81292f">Establishing a connection between Public & Private AWS EC2 servers using Squid Proxy</a></h3>
+                        <p>Learn how to implement proxy servers in your AWS environment.</p>
+                    </div>
+                    <div class="blog">
+                        <h3><a href="https://medium.com/@architbidkar_66467/connect-to-private-aws-rds-instances-via-windows-ec2-8aa8a13047ee">Connect to Private AWS RDS instances via Windows EC2</a></h3>
+                        <p>Discover tips and tricks to connect to your AWS RDS servers in private network via Windows EC2.</p>
+                    </div>
+                    <div class="blog">
+                        <h3><a href="https://medium.com/@architbidkar_66467/take-charge-of-aws-mandatory-mfa-for-unrestricted-resource-management-95241bd13734">Take Charge of AWS: Mandatory MFA for Unrestricted Resource Management!</a></h3>
+                        <p>Implementing MFA for enhanced security of users in AWS.</p>
+                    </div>
+                </div>
+                <a href="https://medium.com/@architbidkar_66467" class="read-more-link">To read more, check my articles on Medium </a>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Get in Touch</h2>
+                <p> Email: architbidkar@hotmail.com | <a href="https://linkedin.com/in/archit-bidkar-kb248">LinkedIn</a> | <a href="https://github.com/Arch920">GitHub</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Archit Bidkar</p>
+        </footer>
+    </div>
+</body>
+</html>
